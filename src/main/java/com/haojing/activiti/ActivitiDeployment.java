@@ -19,7 +19,7 @@ public class ActivitiDeployment {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         // 3.进行部署
         Deployment deployment = repositoryService.createDeployment()
-                .addClasspathResource("diagarm/holiday.bpmn")
+                .addClasspathResource("diagarm/holiday.xml")
                 .addClasspathResource("diagarm/holiday.png")
                 .name("请假申请流程")
                 .deploy();
